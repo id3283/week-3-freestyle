@@ -13,7 +13,6 @@ public class BufferedFileReaderDemo {
             BufferedReader bufReader = new BufferedReader(reader);
 
             String input = bufReader.readLine();
-
             while (input != null) {
                 System.out.println(input);
                 input = bufReader.readLine();
