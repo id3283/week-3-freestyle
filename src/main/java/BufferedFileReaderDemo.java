@@ -6,15 +6,17 @@ import java.io.IOException;
 public class BufferedFileReaderDemo {
 
     public static void main(String[] args) {
-        String fileName = "src/main/resources/names.txt";
+        String fileName = "src/main/resources/" + "goldilocks.txt";
 
         try {
             FileReader reader = new FileReader(fileName);
             BufferedReader bufReader = new BufferedReader(reader);
 
-            String input;
-            while((input = bufReader.readLine()) != null) {
+            String input = bufReader.readLine();
+
+            while (input != null) {
                 System.out.println(input);
+                input = bufReader.readLine();
             }
 
         } catch (FileNotFoundException e) {
