@@ -6,12 +6,15 @@ public class Employee {
     private double hoursWorked;
     private double payRate;
 
-
     public Employee() {
     }
 
+    public double calculateGrossPay() {
+        return this.hoursWorked * this.payRate;
+    }
+
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(int id) {
