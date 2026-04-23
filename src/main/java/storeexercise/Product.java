@@ -23,4 +23,9 @@ public class Product {
         return price;
     }
 
+    public String toString() {
+        String s = "ID: " + this.id + " - Name: " + this.name + " - Price: " + this.price;
+        return s;
+    }
+
 }
