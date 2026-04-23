@@ -1,6 +1,8 @@
 package storeexercise;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class StoreApp {
     public static void main(String[] args) {
@@ -31,7 +33,6 @@ public class StoreApp {
 
         p = new Product(5, "Parrot", 25);
         inventory.add(p);
-
 
         return inventory;
     }
