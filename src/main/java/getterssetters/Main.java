@@ -18,11 +18,7 @@ public class Main {
 
         // Create new employee object
         Employee newEmployee;
-        newEmployee = new Employee();
-        newEmployee.setId(id);
-        newEmployee.setName(nameString);
-        newEmployee.setHoursWorked(hoursWorked);
-        newEmployee.setPayRate(payRate);
+        newEmployee = new Employee(id, nameString, hoursWorked, payRate);
 
         System.out.println("ID:  " + newEmployee.getId() + " Name: " + newEmployee.getName() + " Gross pay: " + newEmployee.calculateGrossPay() );
     }
