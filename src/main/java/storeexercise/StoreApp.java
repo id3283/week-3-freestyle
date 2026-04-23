@@ -37,6 +37,7 @@ public class StoreApp {
 
         for (Product p : arrayList) {
             String productName = p.getName();
+
             productNameMap.put(productName, p);
         }
 
