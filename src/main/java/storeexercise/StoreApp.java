@@ -32,7 +32,6 @@ public class StoreApp {
 
     private static HashMap<String, Product> loadInventoryMap(String fileName) {
         HashMap<String, Product> productNameMap = new HashMap<>();
-
         ArrayList<Product> arrayList = loadInventory(fileName);
 
         for (Product p : arrayList) {
@@ -40,7 +39,6 @@ public class StoreApp {
 
             productNameMap.put(productName, p);
         }
-
         return productNameMap;
     }
 
