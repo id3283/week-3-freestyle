@@ -13,6 +13,8 @@ So is this.
 
 ![img.png](images/img.png)
 
+Here's a single code snippet `userInput` using single ticks.  
+
 Here's a method that cleverly uses another method:
 ```java
     private static HashMap<String, Product> loadInventoryMap(String fileName) {
